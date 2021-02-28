@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe Form</title>
+    <style>
+        .center{
+            margin: auto;
+            width: 50%;
+            border: 5px solid black;
+            padding: 5px;
+            /* text-align: center; */
+            overflow: auto;
+        }
+        input{
+            display: inline-block;
+            outline: 0;
+            border-width: 0 0 3.5px;
+            border-color: black;
+        }
+        label {
+            display: inline-block;   
+            padding-right: 38%;
+            padding-bottom: 10px;
+            text-align: left  !important;
+        }
+        h1{
+            margin-bottom: 5px;
+        }
+        input[type="text"]::placeholder {  
+                  text-align: center; 
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="center" id="subscribe-form">
+        <h1 style="background-color: red; color: white;">Yes! I want to subscribe to <i>Mag-O-Zine</i></h1>
+        <form>
+            <input type="text" name="name" id="fname" placeholder="First name" size="42">
+            <input type="text" name="name" id="lname" placeholder="Last name" size="42"><br>
+            <label for="fname">First Name</label>
+            <label for="lname">Last Name</label>
+            <input type="text" name="address" id="address" placeholder="Enter your address" size="90"><br>
+            <label for="address">Address</label><br>
+            <input type="text" name="city" id="city" placeholder="City" size="25">
+            <input type="text" name="state" id="state" placeholder="State" size="27">
+            <input type="text" name="pin-code" id="pin-code" placeholder="Pin Code" size="27"><br>
+            <label for="city" style="padding-right: 27%;">City</label>
+            <label for="state" style="padding-right: 190px; ">State</label>
+            <label for="pin-code" style="padding-right: 0px;">Pin-Code</label><br>
+            <span>
+                Subscribe for: 
+                <input type="checkbox" name="subPeriod" id="one-year"><label for="one-year" style="padding-right: 5px;">1 Year (19.95$)</label>
+                <input type="checkbox" name="subPeriod" id="two-year"><label for="two-year" style="padding-right: 5px;">2 Years (35.00$)</label>
+            </span><br>
+            <span>Send me information about: </span>
+            <div>
+                <input type="checkbox" name="info" id="computer"><label for="computer">Computer-zine</label><br>
+                <input type="checkbox" name="info" id="fishing"><label for="fishing">Fishing-zine</label><br>
+                <input type="checkbox" name="info" id="cat-o-zine"><label for="cat-o-zine">Cat-O-zine</label><br>
+
+            </div>
+        </form>
+    </div>
+</body>
+</html>
